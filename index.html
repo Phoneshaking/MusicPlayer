@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/cube.js"></script>
+</head>
+<body id="obody">
+
+<div class="header-nav">
+
+</div>
+<div class="content">
+
+    <div class="sidebar">
+        <span class="sidebar-pic"></span>
+        <ul>
+            <li id="bgc">你喜欢的背景
+                <span> > </span>
+            <ul id="bgcUl">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+            </li>
+            <li>不知道写啥先</li>
+            <li><a href="#">不知道写啥先</a></li>
+            <li><a href="#">不知道写啥先</a></li>
+        </ul>
+    </div>
+
+    <div class="content-square">
+        <div class="cube">
+            <div class="cubebox">
+            <div class="style top"><img src="images/ad1.jpg"></div>
+            <div class="style front"><img src="images/ad2.jpg"></div>
+            <div class="style bottom"><img src="images/ad3.jpg"></div>
+            <div class="style back"><img src="images/ad4.jpg"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+$(function (){
+    //主体翻转轮播图旋转功能
+    var clientY = $(window).height();
+    var selfY = $('.content-square').outerHeight();
+    $(window).on('scroll',function () {
+        var scrollTop = $(window).scrollTop();
+        var rate = (scrollTop/(selfY+120-clientY))*360;
+
+        $('.cubebox').css({
+            transform:'rotateX('+rate+'deg)'
+        });
+
+    });
+    // console.log($("#bgcUl"));
+})
+</script>
+<script>
+    var bgcUl = document.getElementById("bgcUl");
+    var obody = document.getElementById("obody");
+    var li = bgcUl.children;
+    var colorArr = ["#b03e00","#f5d06c","#bcc","#bce8f1"];
+
+    console.log(colorArr);
+    for(var j =0;j< colorArr.length;j++){
+        // console.log(j);
+        console.log(colorArr[j]);
+        for(var i =0;i < li.length;i++){
+
+            li[i].onclick = function () {
+                j = i;
+                console.log(j);
+                obody.style.backgroundColor = colorArr[j];
+            }
+        }
+    }
+
+</script>
+</body>
+</html>
