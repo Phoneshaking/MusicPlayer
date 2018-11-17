@@ -20,5 +20,8 @@ $(function () {
     obody.click(function () {
         changeSkin.find('#bgcUl').fadeOut(1000)
     })
+//侧栏弹出
+
+     $(".sidebar").delay(3000).fadeIn(500);
 
 });
