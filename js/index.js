@@ -19,12 +19,7 @@ $(function () {
     });
     obody.click(function () {
         changeSkin.find('#bgcUl').fadeOut(1000)
-<<<<<<< HEAD
-    })
-//侧栏弹出
 
-     $(".sidebar").delay(3000).fadeIn(500);
-=======
     });
     //进页面时的效果
     var picTimer = setTimeout(function () {
@@ -36,7 +31,5 @@ $(function () {
 
         })
     },1000);
-
->>>>>>> df956493ef49b0d095cdee222a95d0ded6b7c1d3
 
 });
