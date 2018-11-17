@@ -160,5 +160,22 @@ position: relative;
     }
 }
 .play{
-    width: 100px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 90;
+}
+.play-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    filter: drop-shadow(0 0 7px rgba(0,0,0,.5));
+    transform: translate(-50%,-50%);
+}
+
+.play-icon :hover{
+    background-color: #000;
 }
