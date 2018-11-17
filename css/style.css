@@ -125,3 +125,25 @@ position: relative;
     top: 0;
 }
 
+/*cube下提示箭头*/
+.arrow{
+    position: fixed;
+    width: 45px;
+    transform: translateX(-50%);
+    bottom: 32px;
+    transition: opacity 1s ease-in-out;
+    animation: animate 1s ease infinite;
+    left: 50%;
+
+
+}
+@keyframes animate {
+    0%,100%{
+        opacity: 0;
+        bottom: 40px;
+    }
+    50%{
+        opacity: .8;
+        bottom: 32px;
+    }
+}
