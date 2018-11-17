@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/cube.js"></script>
+    <script src="js/index.js"></script>
 </head>
 <body id="obody">
 
@@ -21,10 +22,10 @@
             <li id="bgc">你喜欢的背景
                 <span> > </span>
             <ul id="bgcUl">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li style="background-color: #b03e00"></li>
+                <li style="background-color: #f5d06c"></li>
+                <li style="background-color: #bcc"></li>
+                <li style="background-color: #bce8f1"></li>
             </ul>
 
             </li>
@@ -46,45 +47,5 @@
     </div>
 </div>
 
-
-<script>
-
-$(function (){
-    //主体翻转轮播图旋转功能
-    var clientY = $(window).height();
-    var selfY = $('.content-square').outerHeight();
-    $(window).on('scroll',function () {
-        var scrollTop = $(window).scrollTop();
-        var rate = (scrollTop/(selfY+120-clientY))*360;
-
-        $('.cubebox').css({
-            transform:'rotateX('+rate+'deg)'
-        });
-
-    });
-    // console.log($("#bgcUl"));
-})
-</script>
-<script>
-    var bgcUl = document.getElementById("bgcUl");
-    var obody = document.getElementById("obody");
-    var li = bgcUl.children;
-    var colorArr = ["#b03e00","#f5d06c","#bcc","#bce8f1"];
-
-    console.log(colorArr);
-    for(var j =0;j< colorArr.length;j++){
-        // console.log(j);
-        console.log(colorArr[j]);
-        for(var i =0;i < li.length;i++){
-
-            li[i].onclick = function () {
-                j = i;
-                console.log(j);
-                obody.style.backgroundColor = colorArr[j];
-            }
-        }
-    }
-
-</script>
 </body>
 </html>

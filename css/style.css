@@ -40,6 +40,11 @@ body{
 position: relative;
     text-align: center;
 }
+.sidebar #bgc #bgcUl{
+    position:absolute ;
+    background-color: #000;
+    display: none;
+}
 .sidebar #bgc ul li{
     width: 20px;
     height: 20px;
