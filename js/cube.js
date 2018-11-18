@@ -13,5 +13,16 @@ $(function (){
         });
 
     });
+    //设置播放按钮点击后消失
+    var everyCube = $('.cubebox').children('.style');
+    console.log(everyCube);
+    everyCube.each(function () {
+        var self = this;
+        $(this).click(function () {
+            console.log(this);
+            $(self).find('.play-icon').slideUp();
+        });
+
+    })
 
 });
