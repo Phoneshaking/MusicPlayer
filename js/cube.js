@@ -26,24 +26,30 @@ $(function (){
         });
 
     });
-    //设置cube宽高适配窗口
 
+    //设置cube宽高适配窗口
     const rateX = 1262/1880;
     const rateY = 709/922;
-    $(window).resize(function () {
-      getcurrentsize();
-    });
+
+    $(window).resize(getcurrentsize());
 
     function getcurrentsize() {
         var currentclientY = $(window).height();
         var currentclientX = $(window).width();
+        var currentWidth = (currentclientX-280)*rateX;
+        var currentHeight = (currentclientY-280)*rateY;
+        // currentWidth<=565 ? currentWidth=565 : currentWidth;
+        // currentHeight<=317 ? currentHeight=317 : currentHeight;
         cubeBox.css({
-            width:(currentclientX-280)*rateX,
-            height:(currentclientY-280)*rateY
+            width:currentWidth,
+            height:currentHeight
         });
-        $('.cubebox >div').each(function () {
+        $.each($('.cubebox >div'),function (i) {
             $(this).css({
-                transform: transform+='translateZ'+(currentclientY-280)*rateY/2
+                transform: 'rotateX('+i*90+'deg) translateZ('+(currentclientY-280)*rateY/2+'px'
+            });
+            $('.content-square').css({
+                marginTop:currentclientY/4
             })
         })
     }
