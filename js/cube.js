@@ -28,29 +28,26 @@ $(function (){
     });
 
     //设置cube宽高适配窗口
-    const rateX = 1262/1880;
-    const rateY = 709/922;
+    const rateX = 920/1920;
 
-    $(window).resize(getcurrentsize());
+    $(window).resize(getcurrentsize);
 
     function getcurrentsize() {
-        var currentclientY = $(window).height();
         var currentclientX = $(window).width();
-        var currentWidth = (currentclientX-280)*rateX;
-        var currentHeight = (currentclientY-280)*rateY;
-        // currentWidth<=565 ? currentWidth=565 : currentWidth;
-        // currentHeight<=317 ? currentHeight=317 : currentHeight;
+        var currentclientY = $(window).height();
+        var currentWidth = (currentclientX)*rateX;
+        var currentHeight = currentWidth/1.77;
+        currentWidth<=566 ? currentWidth=566 : currentWidth;
+        currentHeight<=318? currentHeight = 318 :currentHeight;
         cubeBox.css({
             width:currentWidth,
             height:currentHeight
         });
         $.each($('.cubebox >div'),function (i) {
             $(this).css({
-                transform: 'rotateX('+i*90+'deg) translateZ('+(currentclientY-280)*rateY/2+'px'
+                transform: 'rotateX('+i*90+'deg) translateZ('+(currentHeight)/2+'px'
             });
-            $('.content-square').css({
-                marginTop:currentclientY/4
-            })
+
         })
     }
     getcurrentsize();

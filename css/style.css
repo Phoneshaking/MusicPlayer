@@ -104,17 +104,19 @@ position: relative;
     margin-top: 10%;
 }
 .cube{
+    width: 100%;
+    perspective: 900px;
     position: fixed;
     left: 50%;
     transform: translate(-50%);
-    perspective: 900px;
+
 }
 .cubebox{
+    position: relative;
     width :670px;
     transform-style: preserve-3d;
-    transform: rotateX(0deg) rotateY(0deg);
     cursor: pointer;
-
+    margin: 0 auto;
 
 }
 
