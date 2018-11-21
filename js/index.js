@@ -1,13 +1,22 @@
 $(function () {
     //换肤功能
-    var changeSkin = $('.sidebar #bgc');
+    var changeSkin = $('#bgcUl');
+    var origin = $('.origin');
     var obody = $('body');
+    origin.click(function (e) {
+        obody.css({
+            'backgroundColor':'#fff'
+        });
+        e.stopPropagation();
+    });
     changeSkin.click(function (e) {
         changeSkin.find('#bgcUl').fadeIn(1000);
         e.stopPropagation();
     });
-    changeSkin.find('#bgcUl li').each(function () {
+    changeSkin.find('li').each(function () {
+        console.log(1);
         $(this).click(function (e) {
+
             var ownColor = this.style.backgroundColor;
             obody.css({
                 'backgroundColor':ownColor
