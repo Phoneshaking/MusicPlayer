@@ -1,18 +1,16 @@
 $(function (){
     //主体翻转轮播图旋转功能
     var clientY = $(window).height();
-    console.log(clientY);
     var cubeBox = $('.cubebox');
     var selfY = $('body').height();
-
-
     $(window).on('scroll',function () {
         //箭头消失
         $('.arrow img').fadeOut(1000);
 
         var scrollTop = $(window).scrollTop();
 
-        var rate = (scrollTop/(selfY-clientY))*360;
+        var rate = ((scrollTop)/(selfY-clientY))*360;
+
         cubeBox.css({
             transform:'rotateX('+rate+'deg)',
         });
@@ -40,7 +38,7 @@ $(function (){
         var currentWidth = (currentclientX)*rateX;
         var currentHeight = currentWidth/1.77;
 
-        // currentWidth<=566 ? currentWidth=566 : currentWidth;
+        currentWidth<=443 ? currentWidth=443: currentWidth;
         // currentHeight<=318? currentHeight = 318 :currentHeight;
 
         cubeBox.css({

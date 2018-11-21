@@ -1,7 +1,7 @@
 $(function () {
     //换肤功能
     var changeSkin = $('.sidebar #bgc');
-    var obody = $('body');
+    var obody = $('obody');
     changeSkin.click(function (e) {
         changeSkin.find('#bgcUl').fadeIn(1000);
         e.stopPropagation();
