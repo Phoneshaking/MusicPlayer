@@ -32,5 +32,25 @@ $(function () {
             'display':'block'
         })
     },1000);
+//    隐藏与展示按钮,蒙版按钮
+    $(".show-hidden").on("click",function () {
+        $(".header-nav").slideToggle(500);
+        $(".sidebar").slideToggle(500)
+    });
+    $(".mask").on("click",function () {
+        $(".mask-D").css("display","block")
+    })
+    $(".mask-D").on("click",function () {
+        $(".mask-D").css("display","none")
+    })
+    $(".bottom-btn-img").on("click",function (e) {
+        $(".bottom-btn").slideToggle(500);
+        e.stopPropagation();
+    })
+    $("#obody").on("click",function () {
+        $(".bottom-btn").slideUp(500)
+    })
+
+
 
 });

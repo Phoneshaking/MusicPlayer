@@ -2,20 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta>
     <title>index</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/jquery-ui.js"></script>
     <script src="js/cube.js"></script>
     <script src="js/index.js"></script>
 </head>
 <body id="obody">
-
+<div class="large-pic"></div>
 <div class="header-nav">
 <div id="logo"></div>
 </div>
 <div class="content">
-    <div class="large-pic"><div></div></div>
+
     <div class="sidebar">
         <span class="sidebar-pic"></span>
         <ul>
@@ -38,14 +40,27 @@
     <div class="content-square">
         <div class="cube">
             <div class="cubebox">
-            <div class="style top"><img src="images/ad1.jpg"></div>
-            <div class="style front"><img src="images/ad2.jpg"></div>
-            <div class="style bottom"><img src="images/ad3.jpg"></div>
-            <div class="style back"><img src="images/ad4.jpg"></div>
+            <div class="style front"><div class="play"><div class="cube-mes"><div class="song-title"><h1>Yoga-Panda</h1></div><div class="mes"><p>《蒙面唱将猜猜猜》Yoga的熊猫头</p></div></div><div class="play-icon" width="80" height="80" viewBox="0 0 100 100">
+                <img src="images/play.png" alt=""></div></div></div>
+            <div class="style top"><div class="play"><div class="cube-mes"><div class="song-title"><h1>Yoga-Panda</h1></div><div class="mes"><p>《蒙面唱将猜猜猜》Yoga的熊猫头</p></div></div><div class="play-icon" width="80" height="80" viewBox="0 0 100 100">
+                <img src="images/play.png" alt=""></div></div></div>
+            <div class="style back"><div class="play"><div class="cube-mes"><div class="song-title"><h1>Yoga-Panda</h1></div><div class="mes"><p>《蒙面唱将猜猜猜》Yoga的熊猫头</p></div></div><div class="play-icon" width="80" height="80" viewBox="0 0 100 100">
+                <img src="images/play.png" alt=""></div></div></div>
+            <div class="style bottom"><div class="play"><div class="cube-mes"><div class="song-title"><h1>Yoga-Panda</h1></div><div class="mes"><p>《蒙面唱将猜猜猜》Yoga的熊猫头</p></div></div><div class="play-icon" width="80" height="80" viewBox="0 0 100 100">
+                <img src="images/play.png" alt=""></div></div></div>
             </div>
         </div>
     </div>
 </div>
 <div class="arrow"><img class="arrow-image" src="images/arrow.svg" alt=""></div>
+<!--隐藏与展示按钮,蒙版按钮-->
+
+<div class="bottom-btn">
+    <div class="show-hidden"><p>隐藏导航</p></div>
+    <div class="mask"><p>mask</p></div>
+</div>
+<img class="bottom-btn-img" src="images/dir-up-grey.png" alt="">
+<div class="mask-D">
+</div>
 </body>
 </html>
