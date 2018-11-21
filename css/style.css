@@ -44,6 +44,7 @@ body{
     display: none;
     left: 30px;
     top: 100px;
+    z-index: 998;
 }
 
 .sidebar-pic {
@@ -60,7 +61,7 @@ body{
 
 /*背景图片的切换*/
 .sidebar #bgc{
-position: relative;
+    position: relative;
     text-align: center;
 }
 .sidebar #bgc #bgcUl{

@@ -18,7 +18,6 @@ $(function (){
     });
     //设置播放按钮点击后消失
     var everyCube = cubeBox.children('.style');
-    console.log(everyCube);
     everyCube.each(function () {
         var self = this;
         $(this).click(function () {

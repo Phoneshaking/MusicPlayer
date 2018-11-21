@@ -1,11 +1,10 @@
 $(function () {
     //换肤功能
     var changeSkin = $('.sidebar #bgc');
-    var obody = $('obody');
+    var obody = $('body');
     changeSkin.click(function (e) {
         changeSkin.find('#bgcUl').fadeIn(1000);
         e.stopPropagation();
-        console.log(1);
     });
     changeSkin.find('#bgcUl li').each(function () {
         $(this).click(function (e) {
@@ -39,14 +38,14 @@ $(function () {
     });
     $(".mask").on("click",function () {
         $(".mask-D").css("display","block")
-    })
+    });
     $(".mask-D").on("click",function () {
         $(".mask-D").css("display","none")
-    })
+    });
     $(".bottom-btn-img").on("click",function (e) {
         $(".bottom-btn").slideToggle(500);
         e.stopPropagation();
-    })
+    });
     $("#obody").on("click",function () {
         $(".bottom-btn").slideUp(500)
     })
