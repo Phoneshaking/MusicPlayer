@@ -5,7 +5,7 @@ $(function (){
     var cubeBox = $('.cubebox');
     var selfY = $('body').height();
 
-    var offsetTop = cubeBox.offset().top;
+
     $(window).on('scroll',function () {
         //箭头消失
         $('.arrow img').fadeOut(1000);
@@ -16,10 +16,6 @@ $(function (){
         cubeBox.css({
             transform:'rotateX('+rate+'deg)',
         });
-
-        cubeBox.css({
-            top:offsetTop+scrollTop
-        })
 
     });
     //设置播放按钮点击后消失
@@ -35,8 +31,7 @@ $(function (){
     });
 
     //设置cube宽高适配窗口
-    const rateX = 1280/1920;
-    const rateL = 150/1333;
+    const rateX = 920/1920;
 
     $(window).resize(getcurrentsize);
 
@@ -51,9 +46,6 @@ $(function (){
         cubeBox.css({
             width:currentWidth,
             height:currentHeight
-        });
-        $('.cubebox').css({
-            left:currentclientX*rateL+'px'
         });
 
         $.each($('.cubebox >div'),function (i) {
