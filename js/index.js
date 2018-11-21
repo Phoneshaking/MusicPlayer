@@ -19,13 +19,10 @@ $(function () {
     });
     obody.click(function () {
         changeSkin.find('#bgcUl').fadeOut(1000)
-<<<<<<< HEAD
-    })
-//侧栏弹出
 
-     $(".sidebar").delay(3000).fadeIn(500);
-=======
     });
+
+
     //进页面时的效果
     var picTimer = setTimeout(function () {
         $('.large-pic').fadeOut(1000);
@@ -33,10 +30,7 @@ $(function () {
         $('.arrow img').delay(1000).animate({
             'opacity':1,
             'display':'block'
-
         })
     },1000);
-
->>>>>>> df956493ef49b0d095cdee222a95d0ded6b7c1d3
 
 });
