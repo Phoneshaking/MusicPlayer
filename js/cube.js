@@ -37,8 +37,8 @@ $(function (){
         var currentclientY = $(window).height();
         var currentWidth = (currentclientX)*rateX;
         var currentHeight = currentWidth/1.77;
-        currentWidth<=566 ? currentWidth=566 : currentWidth;
-        currentHeight<=318? currentHeight = 318 :currentHeight;
+        // currentWidth<=566 ? currentWidth=566 : currentWidth;
+        // currentHeight<=318? currentHeight = 318 :currentHeight;
         cubeBox.css({
             width:currentWidth,
             height:currentHeight
