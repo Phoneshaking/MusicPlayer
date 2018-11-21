@@ -60,47 +60,7 @@ body{
     margin-bottom: 10px;
 }
 
-/*背景图片的切换*/
-.sidebar #bgc{
-position: relative;
-    text-align: center;
-}
-.sidebar #bgc #bgcUl{
-    position:absolute ;
-    background-color: #000;
-    display: none;
-}
-.sidebar #bgc ul li{
-    box-shadow: #1B1B1E 1px 1px 5px  ;
-    width: 20px;
-    height: 20px;
-    margin-top: 10px;
-    float: right;
-    position: absolute;
-    border-radius: 15px;
-    display: inline-block;
-}
 
-.sidebar #bgc li:nth-child(1){
-    left: 130px;
-    top: -50px;
-    background-color: #b03e00;
-}
-.sidebar #bgc li:nth-child(2){
-    left: 150px;
-    top: -37px;
-    background-color: #f5d06c;
-}
-.sidebar #bgc li:nth-child(3){
-    left: 150px;
-    top: -10px;
-    background-color: #bcc;
-}
-.sidebar #bgc li:nth-child(4){
-    left: 130px;
-    top: 5px;
-    background-color: #bce8f1;
-}
 .content-square{
     width: 100%;
     height: 2000px;
@@ -226,14 +186,14 @@ position: relative;
 .bottom-btn{
     width: 40px;
     height: 150px;
-    border: 1px solid #8e8e8e;
+    /*border: 1px solid #8e8e8e;*/
     border-top-left-radius: 20px;
     border-top-right-radius: 20px ;
     border-bottom: none;
     position: fixed;
-    right: 50px;
+    right: 48px;
     bottom:70px;
-    display: none;
+    /*display: none;*/
 }
 .bottom-btn-img{
     width: 48px;
@@ -241,7 +201,7 @@ position: relative;
     position: fixed;
     z-index: 2;
     bottom: 40px;
-    right: 45px;
+    right: 44px;
     cursor: pointer;
 }
 .bottom-btn div{
@@ -252,15 +212,6 @@ position: relative;
     cursor: pointer;
     line-height: 45px;
 }
-.bottom-btn .show-hidden{
-    margin: 20px 2px 15px;
-
-
-}
-.bottom-btn .mask{
-
-    margin: 0 2px 0;
-}
 .mask-D{
     background-color: rgba(0, 0, 0, 0.85);
     width: 100%;
@@ -269,4 +220,45 @@ position: relative;
     display: none;
     left: 0;
     top:0;
+}
+/*背景图片的切换*/
+.change-bgc{
+    position: relative;
+}
+/*#bgcUl{*/
+    /**/
+    /*position:absolute ;*/
+    /*background-color: #000;*/
+    /*display: none;*/
+/*}*/
+ #bgcUl li{
+    box-shadow: #1B1B1E 1px 1px 5px  ;
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    float: right;
+    position: absolute;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+ #bgcUl li:nth-child(1){
+    left: -36px;
+    top: -36px;
+    background-color: #b03e00;
+}
+#bgcUl li:nth-child(2){
+    left: -14px;
+    top: -61px;
+    background-color: #f5d06c;
+}
+#bgcUl li:nth-child(3){
+    left: 27px;
+    top: -61px;
+    background-color: #bcc;
+}
+#bgcUl li:nth-child(4){
+    left: 49px;
+    top: -35px;
+    background-color: #bce8f1;
 }
