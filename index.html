@@ -8,6 +8,7 @@
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/cube.js"></script>
     <script src="js/index.js"></script>
+
 </head>
 <body id="obody">
 
@@ -29,7 +30,7 @@
             </ul>
 
             </li>
-            <li>不知道写啥先</li>
+            <li><input type="file" id="file" onchange="getvl(this)" /></li>
             <li><a href="#">不知道写啥先</a></li>
             <li><a href="#">不知道写啥先</a></li>
         </ul>
@@ -38,7 +39,9 @@
     <div class="content-square">
         <div class="cube">
             <div class="cubebox">
-            <div class="style top"><img src="images/ad1.jpg"></div>
+            <div class="style top">
+                <!--<img src="images/ad1.jpg">-->
+                <audio id="fry_audio" src="" controls="controls"></audio></div>
             <div class="style front"><img src="images/ad2.jpg"></div>
             <div class="style bottom"><img src="images/ad3.jpg"></div>
             <div class="style back"><img src="images/ad4.jpg"></div>
@@ -46,6 +49,16 @@
         </div>
     </div>
 </div>
+<script>
 
+    // function autoPlay() {
+    //         $('#fry_audio').attr('src',file_url);
+    //                     var fry_audio=$('#fry_audio').get('0');
+    //                     fry_audio.load();
+    //                console.log(1);
+    // };
+
+</script>
+<script src="js/getFileUrl.js"></script>
 </body>
 </html>
