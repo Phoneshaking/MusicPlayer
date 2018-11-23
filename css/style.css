@@ -19,10 +19,20 @@ img{
     height: 50px;
     position: absolute;
     z-index: 10;
-    left: 0;
-    top: 0;
+    left: 510px;
+    top: 4px;
     background:url("../images/d214bbc3d892e1f5b12541c92fc641e.png");
     background-size: 100%,100%;
+}
+#logo span{
+    width: 220px;
+    height: 50px;
+    position: absolute;
+    left: 77px;
+    top: -3px;
+    font-size: 42px;
+    font-family: "MV Boli", Georgia,Serif;
+    color: white;
 }
 .content{
     text-align: center;
@@ -226,7 +236,7 @@ img{
     position: fixed;
     right: 45px;
     bottom:70px;
-    /*display: none;*/
+    display: none;
     z-index: 998;
 }
 .bottom-btn-img{
