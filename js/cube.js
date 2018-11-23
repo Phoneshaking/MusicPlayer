@@ -29,6 +29,7 @@ $(function (){
 
     //设置cube宽高适配窗口
     const rateX = 920/1920;
+    const rateL = 50/1333;
 
     $(window).resize(getcurrentsize);
 
@@ -43,6 +44,9 @@ $(function (){
         cubeBox.css({
             width:currentWidth,
             height:currentHeight
+        });
+        $('.cubebox').css({
+            left:currentclientX*rateL+'px'
         });
 
         $.each($('.cubebox >div'),function (i) {
