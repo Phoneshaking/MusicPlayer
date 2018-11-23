@@ -63,6 +63,7 @@ img{
 .sidebar-pic {
     width: 150px;
     height: 104px;
+    cursor: pointer;
     display: inline-block;
     background: url("../images/logo-black.png") no-repeat;
     background-size: 150px;
@@ -430,6 +431,7 @@ img{
 }
 
 .plist{
+    width:200px ;
     display: none;
 }
 
