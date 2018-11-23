@@ -87,6 +87,4 @@ $(function () {
         $('.changeskin-box').fadeOut()
     });
 
-
-
 });
