@@ -65,8 +65,14 @@ $(function () {
         $('.arrow img').delay(1000).animate({
             'opacity':1,
             'display':'block'
-        })
+        });
+
     },1000);
+    //小盒子动画
+    var cube = setTimeout(function () {
+        $(".cube-changeSkin").delay(2000).addClass("jump").css("opacity",1);
+    },2000);
+
 //    隐藏与展示按钮,蒙版按钮
     $(".show-hidden").on("click",function () {
         $(".header-nav").slideToggle(500);

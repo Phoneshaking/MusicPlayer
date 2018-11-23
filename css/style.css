@@ -94,6 +94,7 @@ img{
     position: fixed;
     right: 50px;
     top: 100px;
+    opacity: 0;
 
 }
 .cubebox-changeSkin {
@@ -103,6 +104,7 @@ img{
     cursor: pointer;
     position: relative;
     top: 200px;
+
 }
 
 .cubebox-changeSkin .front{
@@ -426,14 +428,11 @@ img{
     transform: translate(4px,-4px);
     transition: all 0.4s;
 }
-.change-mes{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 91px;
-    width: 536px;
-    z-index: 99999;
+
+.plist{
+    display: none;
 }
+
 
 
 

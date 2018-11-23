@@ -123,4 +123,12 @@ $(function (){
     [].forEach.call(oAudios, function (i) {
         i.addEventListener("play", pauseAll.bind(i));
     })
+    //给左侧标题添加点击事件
+    $(".sidebar-pic").on("click",function () {
+        $(".plist").fadeToggle(2000);
+        console.log("该切换");
+    })
+//拖拽
+    $(".changeskin-box").Tdrag();
+
 });
