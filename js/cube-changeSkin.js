@@ -52,7 +52,8 @@ $(function (){
                         $('.cubebox>div').eq(index).css({
                             background:'url("'+Picsrc+'")  no-repeat center center',
                             backgroundSize:'cover'
-                        })
+                        }).find('.cube-mes').replaceWith('<img src="../images/change-mes.jpg" alt="" class="change-mes">')
+
 
 
                     })
