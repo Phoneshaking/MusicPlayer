@@ -35,9 +35,31 @@ $(function (){
 
             $(this).click(function (e) {
                 e.stopPropagation();
-                console.log(this);
-                console.log(i);
-                $($('.changeskin-box .m-pic').get(i)).fadeToggle().siblings().fadeOut();
+                var index = i;
+                var picParent = $($('.changeskin-box .m-pic').get(i));
+                var Pics = picParent.find('li img');
+                console.log(Pics);
+
+                Pics.each(function () {
+                    $(this).click(function () {
+                        console.log(this);
+                        var Picsrc =  this.src;
+                        console.log(Picsrc);
+                        $('.cubebox-changeSkin>div').eq(index).css({
+                            background:'url("'+Picsrc+'")  no-repeat center center',
+                            backgroundSize:'cover'
+                        });
+                        $('.cubebox>div').eq(index).css({
+                            background:'url("'+Picsrc+'")  no-repeat center center',
+                            backgroundSize:'cover'
+                        })
+
+
+                    })
+                });
+
+                picParent.fadeToggle().siblings().fadeOut();
+
 
             })
         });
