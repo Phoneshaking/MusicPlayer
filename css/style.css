@@ -113,6 +113,7 @@ img{
     background-size: cover ;
 
 }
+
 .cubebox-changeSkin .top{
     transform: rotateX(270deg) translateZ(150px);
     background: url("../images/yogapanda-right.jpg")   no-repeat   center center  ;
@@ -126,6 +127,7 @@ img{
     background: url("../images/yogapanda-left.jpg")  no-repeat center center ;
     background-size: cover;
 }
+
 .cubebox .bottom{
     transform: rotateX(90deg) translateZ(150px);
     background: url("../images/yogapandasmall.jpg")  no-repeat center center;

@@ -10,7 +10,11 @@
     <!--<script src="js/jquery-ui.js"></script>-->
     <script src="js/cube.js"></script>
     <script src="js/index.js"></script>
+
+    <script src="js/setSrc.js"></script>
+
     <script src="js/cube-changeSkin.js"></script>
+
 </head>
 <body id="obody">
 <div class="large-pic"></div>
@@ -21,10 +25,16 @@
     <div class="sidebar">
         <span class="sidebar-pic"></span>
         <ul>
-
-            <li>不知道写啥先</li>
-            <li><a href="#">不知道写啥先</a></li>
-            <li><a href="#">不知道写啥先</a></li>
+            </li>
+            <!--<li><input type="file" id="file" onchange="getvl(this)" /></li>-->
+            <li><input type="file" id="file1" onchange="setSrc('#file1','#fry_audio1')" /></li>
+            <li><audio id="fry_audio1" src="" controls="controls" style="width: 130px"></audio></li>
+            <li><input type="file" id="file2" onchange="setSrc('#file2','#fry_audio2')" /></li>
+            <li><audio id="fry_audio2" src="" controls="controls" style="width: 130px"></audio></li>
+            <li><input type="file" id="file3" onchange="setSrc('#file3','#fry_audio3')" /></li>
+            <li><audio id="fry_audio3" src="" controls="controls" style="width: 130px"></audio></li>
+            <li><input type="file" id="file4" onchange="setSrc('#file4','#fry_audio4')" /></li>
+            <li><audio id="fry_audio4" src="" controls="controls" style="width: 130px"></audio></li>
         </ul>
     </div>
 
@@ -40,6 +50,7 @@
                 <img src="images/play.png" alt=""></div></div></div>
             </div>
         </div>
+
 
 
     <!--写真选择-->
@@ -110,7 +121,9 @@
     </div>
     </div>
 
+
 </div>
+
 <div class="arrow"><img class="arrow-image" src="images/arrow.svg" alt=""></div>
 <!--隐藏与展示按钮,蒙版按钮-->
 
@@ -142,6 +155,7 @@
 <div class="mask-D">
     <img src="images/mask.png" alt="">
 </div>
+
 
 </body>
 </html>
