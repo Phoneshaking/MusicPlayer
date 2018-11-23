@@ -83,8 +83,9 @@ $(function () {
         e.stopPropagation();
     });
     $("#obody").on("click",function () {
-        $(".bottom-btn").slideUp(500)
-    })
+        $(".bottom-btn").slideUp(500);
+        $('.changeskin-box').fadeOut()
+    });
 
 
 
