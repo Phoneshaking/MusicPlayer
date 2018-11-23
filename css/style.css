@@ -61,11 +61,17 @@ img{
 }
 
 .sidebar-pic {
-    width: 150px;
-    height: 104px;
+    position: relative;
+    bottom: 15px;
+    width: 229px;
+    height: 162px;
     display: inline-block;
-    background: url("../images/logo-black.png") no-repeat;
-    background-size: 150px;
+    margin-left: -20px;
+    margin-bottom: -45px;
+}
+.sidebar-pic img{
+    width: 100%;
+    height: 100%;
 }
 
 .sidebar>ul li {
