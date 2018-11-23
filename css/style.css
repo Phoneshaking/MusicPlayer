@@ -61,13 +61,16 @@ img{
 }
 
 .sidebar-pic {
+
     position: relative;
     bottom: 15px;
     width: 229px;
     height: 162px;
+    cursor: pointer;
     display: inline-block;
     margin-left: -20px;
     margin-bottom: -45px;
+    
 }
 .sidebar-pic img{
     width: 100%;
@@ -436,6 +439,7 @@ img{
 }
 
 .plist{
+    width:200px ;
     display: none;
 }
 
