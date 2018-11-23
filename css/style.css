@@ -1,26 +1,50 @@
 @charset "UTF-8";
-body{
 
+body{
+    height: 2000px;
 }
 .header-nav {
     width: 100%;
     height: 60px;
     background-color: #1B1B1E;
-    /*background-color: #0B0B0D;*/
     position: fixed;
     left: 0;
     top: 0;
 }
+#logo{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    background:url("../images/d214bbc3d892e1f5b12541c92fc641e.png");
+    background-size: 100%,100%;
+}
 .content{
     text-align: center;
-    /*position: relative;*/
+    width: 100%;
+    height: 100%;
+
+}
+/*进页面的大图*/
+.large-pic{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background: url("../images/93ec670c2cd8424e8690dfed5f7974c1.jpeg") no-repeat 50% 0 #1B1B1E;
+    top: 0;
+    left: 0;
 }
 .sidebar {
     width: 100px;
     height: 400px;
     position: fixed;
+    display: none;
     left: 30px;
     top: 100px;
+    z-index: 998;
 }
 
 .sidebar-pic {
@@ -35,17 +59,174 @@ body{
     margin-bottom: 10px;
 }
 
-/*背景图片的切换*/
-.sidebar #bgc{
-position: relative;
-    text-align: center;
+.content-square{
+    width: 100%;
+    height: 100%;
+    /*margin-top: 10%;*/
 }
-.sidebar #bgc #bgcUl{
-    position:absolute ;
+.cube{
+    width: 100%;
+    height: 100%;
+    padding: 200px 400px 0 350px;
+    perspective: 900px;/*900*/
+    position: fixed;
+}
+.cubebox {
+    transform-origin: left;
+    width: 100%;
+    height: 564px;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.cubebox .front{
+    transform:rotateX(0deg) translateZ(150px);
+    background: url("../images/yogapanda-left.jpg")  no-repeat center center ;
+    background-size: cover;
+
+
+}
+.cubebox .bottom{
+    transform: rotateX(90deg) translateZ(150px);
+    background: url("../images/yogapandasmall.jpg")  no-repeat center center;
+    background-size: cover ;
+
+}
+
+.cubebox .back{
+    transform: rotateX(180deg) translateZ(150px);
+    background: url("../images/yogapandal-large.jpg")  no-repeat center center ;
+    background-size: cover ;
+
+}
+.cubebox .top{
+    transform: rotateX(270deg) translateZ(150px);
+    background: url("../images/yogapanda-right.jpg")   no-repeat   center center  ;
+    background-size: cover;
+
+}
+
+.style{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+/*cube下提示箭头*/
+.arrow{
+    position: fixed;
+    width: 45px;
+    transform: translateX(-50%);
+    bottom: 32px;
+    transition: opacity 1s ease-in-out;
+    animation: animate 1s ease infinite;
+    left: 50%;
+
+
+}
+@keyframes animate {
+    0%,100%{
+        opacity: 0;
+        bottom: 40px;
+    }
+    50%{
+        opacity: .8;
+        bottom: 32px;
+    }
+}
+.play{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 90;
+}
+.play-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    filter: drop-shadow(0 0 7px rgba(0,0,0,.5));
+    transform: translate(-50%,-50%);
+
+}
+
+.play-icon :hover{
     background-color: #000;
-    display: none;
+    transition: .6s linear;
 }
-.sidebar #bgc ul li{
+.cube-mes{
+    position: absolute;
+    width: 35%;
+    height: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(41, 0, 26, 0.82),transparent);
+}
+.cube-mes .song-title,.mes{
+    color: #fff;
+    font-size: 1.6vh;
+    line-height: 2.4vh;
+}
+
+/*藏与展示按钮,蒙版按钮*/
+.bottom-btn{
+    width: 40px;
+    height: 150px;
+    /*border: 1px solid #8e8e8e;*/
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px ;
+    border-bottom: none;
+    position: fixed;
+    right: 45px;
+    bottom:70px;
+    /*display: none;*/
+}
+.bottom-btn-img{
+    width: 48px;
+    height: 48px;
+    position: fixed;
+    z-index: 2;
+    bottom: 40px;
+    right: 44px;
+    cursor: pointer;
+}
+.bottom-btn div{
+    width: 100%;
+    height: 45px;
+    background: url("../images/choice.png") no-repeat;
+    background-size: 35px 35px;
+    cursor: pointer;
+    line-height: 45px;
+}
+.mask-D{
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: none;
+    left: 0;
+    top:0;
+}
+/*背景图片的切换*/
+.change-bgc{
+    position: relative;
+}
+/*#bgcUl{*/
+    /**/
+    /*position:absolute ;*/
+    /*background-color: #000;*/
+    /*display: none;*/
+/*}*/
+ #bgcUl li{
+    box-shadow: #1B1B1E 1px 1px 5px  ;
     width: 20px;
     height: 20px;
     margin-top: 10px;
@@ -53,66 +234,36 @@ position: relative;
     position: absolute;
     border-radius: 15px;
     display: inline-block;
-    /*opacity: 0;*/
 }
 
-.sidebar #bgc li:nth-child(1){
-    left: 80px;
-    top: -40px;
+ #bgcUl li:nth-child(1){
+    left: -36px;
+    top: -36px;
     background-color: #b03e00;
 }
-.sidebar #bgc li:nth-child(2){
-    left: 100px;
-    top: -27px;
+#bgcUl li:nth-child(2){
+    left: -14px;
+    top: -61px;
     background-color: #f5d06c;
 }
-.sidebar #bgc li:nth-child(3){
-    left: 100px;
-    top: 0;
+#bgcUl li:nth-child(3){
+    left: 27px;
+    top: -61px;
     background-color: #bcc;
 }
-.sidebar #bgc li:nth-child(4){
-    left: 80px;
-    top: 10px;
+#bgcUl li:nth-child(4){
+    left: 49px;
+    top: -35px;
     background-color: #bce8f1;
 }
-.content-square{
-    width: 800px;
-    height: 2000px;
-    margin: 60px auto;
-}
-.cube{
-    position: fixed;
-    width: 600px;
-    margin: 100px 100px 0;
-    perspective: 900px;
-}
-.cubebox{
-    height: 300px;
-    width :670px;
-    transform-style: preserve-3d;
-    transform: rotateX(0deg) rotateY(0deg);
-
-
-
-}
-.cubebox .top{
-    transform: rotateX(90deg) translateZ(150px);
-}
-.cubebox .front{
-    transform:rotateX(0deg) translateZ(150px);
-}
-.cubebox .bottom{
-    transform: rotateX(270deg) translateZ(150px);
-}
-.cubebox .back{
-    transform: rotateX(180deg) translateZ(150px);
-}
-.style{
-    width: 100%;
-    height: 100%;
+.origin{
+    width: 30px;
+    height: 30px;
     position: absolute;
-    left: 0;
     top: 0;
+    left: 0;
+    z-index: 1;
 }
+.dispn{
 
+}

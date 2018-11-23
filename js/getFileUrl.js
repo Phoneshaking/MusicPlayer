@@ -60,5 +60,8 @@ function getvl(obj){
     // document.getElementById("text").innerHTML="获取文件域完整路径为："+file_url;
     // autoPlay();
     $('#fry_audio').attr('src',file_url);
+    // $('#fry_audio').attr('src',fileName);
+    console.log(file_url);
+    console.log($('#fry_audio').attr('src'));
 
 }
