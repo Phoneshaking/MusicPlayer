@@ -352,12 +352,13 @@ img{
     left: 340px;
     top: 250px;
     border: 1px solid #ccc;
+    display: none
 }
 .m-pic .line{
     height: 73%;
     width: 15%;
     /*background-color: red;*/
-    border-right: 1px solid #3C3C3C;
+    border-right: 1px solid #ccc;
     margin-top:10%;
 
     text-align: center;
@@ -386,7 +387,7 @@ img{
     height: 80%;
     /*background-color: #fff;*/
     position: absolute;
-    left:164px;
+    left:90px;
     bottom: 10px;
 }
 .m-pics ul{

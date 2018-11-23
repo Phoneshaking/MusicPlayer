@@ -36,7 +36,8 @@ $(function (){
             $(this).click(function (e) {
                 e.stopPropagation();
                 console.log(this);
-                $($('.changeskin-box .m-pic').get(i)).fadeIn();
+                console.log(i);
+                $($('.changeskin-box .m-pic').get(i)).fadeToggle().siblings().fadeOut();
 
             })
         });

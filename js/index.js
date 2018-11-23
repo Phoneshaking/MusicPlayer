@@ -84,7 +84,7 @@ $(function () {
     });
     $("#obody").on("click",function () {
         $(".bottom-btn").slideUp(500);
-        $('.changeskin-box').fadeOut()
+        $('.changeskin-box .m-pic').fadeOut()
     });
 
 });
