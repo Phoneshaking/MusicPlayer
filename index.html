@@ -19,13 +19,12 @@
 <body id="obody">
 <div class="large-pic"></div>
 <div class="header-nav">
-<div id="logo"></div>
+<div id="logo"><span>Less More</span></div>
 </div>
 <div class="content">
     <div class="sidebar">
         <span class="sidebar-pic"></span>
         <ul>
-
             <li><input type="file" id="file1" onchange="setSrc('#file1','#fry_audio1')" /></li>
             <li><audio id="fry_audio1" src="" controls="controls" style="width: 130px"></audio></li>
             <li><input type="file" id="file2" onchange="setSrc('#file2','#fry_audio2')" /></li>
@@ -55,6 +54,8 @@
     <!--写真选择-->
     <div class="changeskin-box">
         <div class="m-pic">
+            <!--删除按钮-->
+            <span class="close"></span>
         <div class="line">
             <img class="pic" src="images/m-pic.png" alt="">
             <img class="pointer" src="images/pointer.png" alt="">
