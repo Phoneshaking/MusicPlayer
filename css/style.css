@@ -429,6 +429,10 @@ img{
     transform: translate(4px,-4px);
     transition: all 0.4s;
 }
+.plist{
+    display: none;
+}
+
 
 
 
