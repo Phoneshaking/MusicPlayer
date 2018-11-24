@@ -78,7 +78,8 @@ $(function () {
     $(".show-hidden").on("click",function () {
         $(".header-nav").slideToggle(500);
         $(".sidebar").slideToggle(500);
-
+        $('.cubebox-changeSkin').fadeToggle(500)
+        
     });
     $(".mask").on("click",function () {
         $(".mask-D").fadeIn(1000)
@@ -92,7 +93,8 @@ $(function () {
     });
     $("#obody").on("click",function () {
         $(".bottom-btn").slideUp(500);
-        $('.changeskin-box .m-pic').fadeOut()
+        $('.changeskin-box .m-pic').fadeOut();
+
     });
     var li = $(".m-pics ul li");
     $.each(li,function (i,ele) {

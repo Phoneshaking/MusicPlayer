@@ -99,8 +99,5 @@ $(function (){
         $(".plist").stop().slideToggle(500);
 
     })
-<<<<<<< HEAD
-=======
 
->>>>>>> 9bd8fc21c09d8896394514f29b967247f6549d87
 });

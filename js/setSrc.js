@@ -24,6 +24,5 @@ function setSrc(fileId,audioId,pId) {
     var tf = strs[strs.length-2];
     $(pId).text(tf);
 
-
 }
 
