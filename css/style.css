@@ -69,8 +69,6 @@ img{
     cursor: pointer;
     display: inline-block;
     margin-left: -20px;
-    margin-bottom: -45px;
-    
 }
 .sidebar-pic img{
     width: 100%;
@@ -165,7 +163,7 @@ img{
 .cubebox .top{
     transform: rotateX(270deg) translateZ(150px);
     background: url("../images/yogapanda-right.jpg")  no-repeat center center    ;
-
+    background-size: cover;
 
 }
 
@@ -439,8 +437,11 @@ img{
 }
 
 .plist{
-    width:200px ;
     display: none;
+    z-index: 1;
+    position: absolute;
+    top: 110px;
+    left: 0;
 }
 
 
