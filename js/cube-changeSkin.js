@@ -38,11 +38,9 @@ $(function (){
                 var index = i;
                 var picParent = $($('.changeskin-box .m-pic').get(i));
                 var Pics = picParent.find('li img');
-                console.log(Pics);
 
                 Pics.each(function () {
                     $(this).click(function () {
-                        console.log(this);
                         var Picsrc =  this.src;
                         console.log(Picsrc);
                         $('.cubebox-changeSkin>div').eq(index).css({
