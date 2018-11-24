@@ -128,7 +128,4 @@ $(function (){
         $(".plist").fadeToggle(2000);
         console.log("该切换");
     })
-//拖拽
-    $(".changeskin-box").Tdrag();
-
 });
