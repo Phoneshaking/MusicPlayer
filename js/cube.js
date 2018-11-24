@@ -44,7 +44,7 @@ $(function (){
     });
     //移入移出事件
 
-    $(".cubebox").hover(function (){
+    cubeBox.hover(function (){
         $(".play-icon").show();
     },function (){
         $(".play-icon").hide();

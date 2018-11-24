@@ -6,6 +6,7 @@ $(function () {
     var currentTop = 0;
     var currentLeft = 0;
     var arrM =[];
+    var hiddenflag = true;
 
     origin.click(function (e) {
         obody.css({
@@ -78,8 +79,19 @@ $(function () {
     $(".show-hidden").on("click",function () {
         $(".header-nav").slideToggle(500);
         $(".sidebar").slideToggle(500);
-        $('.cubebox-changeSkin').fadeToggle(500)
-        
+        if (hiddenflag){
+            $('.cubebox-changeSkin').css({
+                opacity:0
+            })
+            hiddenflag = false
+        }else {
+            $('.cubebox-changeSkin').css({
+                opacity:1
+            })
+            hiddenflag = true
+        }
+
+
     });
     $(".mask").on("click",function () {
         $(".mask-D").fadeIn(1000)
