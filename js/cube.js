@@ -97,7 +97,7 @@ $(function (){
     //给左侧标题添加点击事件
     $(".sidebar-pic").on("click",function () {
         $(".plist").stop().slideToggle(500);
-       
+
     })
 //拖拽
 

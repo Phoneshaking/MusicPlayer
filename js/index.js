@@ -6,9 +6,10 @@ $(function () {
     var currentTop = 0;
     var currentLeft = 0;
     var arrM =[];
+
     origin.click(function (e) {
         obody.css({
-            'backgroundColor':'#f1f1f4'
+            'backgroundColor':'rgb(201,202,187)'
         });
         e.stopPropagation();
 
@@ -66,8 +67,8 @@ $(function () {
             'opacity':1,
             'display':'block'
         });
-
     },1000);
+
     //小盒子动画
     var cube = setTimeout(function () {
         $(".cube-changeSkin").delay(2000).addClass("jump").css("opacity",1);
@@ -76,7 +77,8 @@ $(function () {
 //    隐藏与展示按钮,蒙版按钮
     $(".show-hidden").on("click",function () {
         $(".header-nav").slideToggle(500);
-        $(".sidebar").slideToggle(500)
+        $(".sidebar").slideToggle(500);
+
     });
     $(".mask").on("click",function () {
         $(".mask-D").fadeIn(1000)
