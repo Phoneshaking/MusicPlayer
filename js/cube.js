@@ -99,10 +99,5 @@ $(function (){
         $(".plist").stop().slideToggle(500);
        
     })
-<<<<<<< HEAD
-=======
-//拖拽
 
-
->>>>>>> 430385f9c85122193b48e2978be1e43fa7c9d5b2
 });
