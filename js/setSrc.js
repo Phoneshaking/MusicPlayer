@@ -20,7 +20,9 @@ function setSrc(fileId,audioId,pId) {
     console.log(file_url);
     // $('#fry_audio1').attr('src',file_url);
     $(audioId).attr('src',file_url);
-    $(pId).text(fileName);
+    // $(pId).text(fileName);
+    var tf = strs[strs.length-2];
+    $(pId).text(tf);
 
 
 }
