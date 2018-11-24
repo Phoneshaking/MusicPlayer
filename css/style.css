@@ -104,7 +104,7 @@ position: absolute;
     transform-style: preserve-3d;
     cursor: pointer;
     position: relative;
-    z-index: 1;
+
 }
 .cube-changeSkin{
     width: 100%;
@@ -112,8 +112,9 @@ position: absolute;
     perspective: 3000px;/*900*/
     position: fixed;
     top: 0;
-    left: 0;
+    right:0;
     opacity: 0;
+    z-index: 2;
 }
 .cubebox-changeSkin {
     width: 100%;
