@@ -94,5 +94,15 @@ $(function () {
         $(".bottom-btn").slideUp(500);
         $('.changeskin-box .m-pic').fadeOut()
     });
+    var li = $(".m-pics ul li");
+    $.each(li,function (i,ele) {
+        $(ele).hover(function () {
+           $(this).css({"animation":"hover1 0.5s","transform": "translate(4px,-4px)"
+           })
+        },function () {
+            $(this).css({"animation":"hover2 0.5s","transform": "translate(0,0)"})
+        })
+    })
 
 });
+
