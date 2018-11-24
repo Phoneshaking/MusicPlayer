@@ -22,22 +22,13 @@ $(function (){
     // var oAudio = document.getElementById("fry_audio1");
     // console.log(oAudio);
     var oAudios = $("audio");
-    console.log(oAudios);
     // var Img = document.getElementsByClassName('play-icon');
 
     var everyCube = cubeBox.children('.style');
     everyCube.each(function (i) {
-        console.log(i);
         var self = this;
         $(this).click(function () {
-            console.log(this);
-            // var Img = $(".play-icon");
-            // console.log(Img);
-            // $(self).find('.play-icon').slideUp();
-            // console.log($(self).find('.play-icon img'));
-            // console.log($(self).find('.play-icon img').attr('src'));
             var oSrc = $(self).find('.play-icon img').attr('src');
-            console.log(oSrc);
             if (oSrc == 'images/play.png') {
                 $(self).find('.play-icon img').attr('src','images/pause.png');
             }else{
@@ -52,17 +43,12 @@ $(function (){
         });
     });
     //移入移出事件
-    // $("cube").hover(function(){
-    //     $(".play-icon").style.display=block;
-    //     },function(){
-    //     $(".play-icon").style.display=none;
-    // });
+
     $(".cubebox").hover(function (){
         $(".play-icon").show();
     },function (){
         $(".play-icon").hide();
     })
-
 
 
 
@@ -96,22 +82,7 @@ $(function (){
         })
     }
     getcurrentsize();
-//多音频文件播放互斥功能
-//     var audios = document.getElementsByTagName("audio");
-//     // 暂停函数
-//     function pauseAll() {
-//         var self = this;
-//         [].forEach.call(audios, function (i) {
-//             // 将audios中其他的audio全部暂停
-//             i !== self && i.pause();
-//         })
-//     }
-//     // 给play事件绑定暂停函数
-//     [].forEach.call(audios, function (i) {
-//         i.addEventListener("play", pauseAll.bind(i));
-//     })
-//     var audios = document.getElementsByTagName("audio");
-    // 暂停函数
+
     function pauseAll() {
         var self = this;
         [].forEach.call(oAudios, function (i) {
@@ -126,9 +97,9 @@ $(function (){
     //给左侧标题添加点击事件
     $(".sidebar-pic").on("click",function () {
         $(".plist").stop().slideToggle(500);
-        console.log("该切换");
+       
     })
 //拖拽
-    $(".changeskin-box").Tdrag();
+
 
 });
