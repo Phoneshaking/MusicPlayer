@@ -55,7 +55,7 @@ $(function (){
                         $('.cubebox>div').eq(index).css({
                             background:'url("'+Picsrc+'")  no-repeat center center',
                             backgroundSize:'cover'
-                        }).find('.cube-mes .song-title').siblings().text('14期项目组加油鸭！')
+                        }).find('.cube-mes .song-title').siblings().text('')
 
                     })
                 });

@@ -82,12 +82,12 @@ $(function () {
         if (hiddenflag){
             $('.cubebox-changeSkin').css({
                 opacity:0
-            })
+            });
             hiddenflag = false
         }else {
             $('.cubebox-changeSkin').css({
                 opacity:1
-            })
+            });
             hiddenflag = true
         }
 
